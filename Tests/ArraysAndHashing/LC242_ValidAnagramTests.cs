@@ -1,6 +1,6 @@
 ﻿using NeetCode.Solutions.ArraysAndHashing;
 
-namespace Tests.ArraysAndHashing;
+namespace NeetCode.Tests.ArraysAndHashing;
 
 [TestClass]
 public class LC242_ValidAnagramTests
