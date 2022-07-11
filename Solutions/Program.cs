@@ -1,5 +1,4 @@
-﻿using NeetCode.Solutions;
-using NeetCode.Solutions.ArraysAndHashing;
+﻿using NeetCode.Solutions.ArraysAndHashing;
 
-var x = new LC217_ContainsDuplicate();
+var x = new LC242_ValidAnagram();
 x.DoMeasurement();
