@@ -77,8 +77,8 @@ public class LC217_ContainsDuplicateTests
 
     private bool ContainsDuplicate(int[] numbers)
     {
-        var x = new LC217_ContainsDuplicate();
-        var result = x.ContainsDuplicate(numbers);
+        var lc217 = new LC217_ContainsDuplicate();
+        var result = lc217.ContainsDuplicate(numbers);
         return result;
     }
 }

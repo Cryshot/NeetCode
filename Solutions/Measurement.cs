@@ -9,7 +9,7 @@ internal class Measurement
 
         var data = RunMeasurement(actionToMeasure, iterations);
 
-        Console.WriteLine($"Measurement '{name}':");
+        Console.WriteLine($"{name}:");
         Console.WriteLine($"\tRun Time: {data.RunTime.TotalMilliseconds}ms");
         Console.WriteLine($"\tMemory Usage: {data.MemoryUsage}kb");
     }

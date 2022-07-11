@@ -6,6 +6,11 @@ public class LC217_ContainsDuplicate
 {
     public bool ContainsDuplicate(int[] nums)
     {
+        return ContainsDuplicate_I(nums);
+    }
+
+    private static bool ContainsDuplicate_I(int[] nums)
+    {
         var processedNumbers = new HashSet<int>();
         foreach (var number in nums)
         {
@@ -16,13 +21,13 @@ public class LC217_ContainsDuplicate
         return false;
     }
 
-    public bool FancyContainsDuplicate(int[] nums)
+    private static bool ContainsDuplicate_II(int[] nums)
     {
         var numbers = new HashSet<int>(nums);
         return numbers.Count != nums.Length;
     }
 
-    public bool FasterContainsDuplicate(int[] nums)
+    private static bool ContainsDuplicate_III(int[] nums)
     {
         var processedNumbers = new HashSet<int>();
         for (var i = 0; i < nums.Length; i++)
@@ -39,8 +44,8 @@ public class LC217_ContainsDuplicate
     {
         var nums = new[] { 1, 2, 3, 4 };
         var measurement = new Measurement();
-        measurement.Measure("ContainsDuplicate", () => { ContainsDuplicate(nums); });
-        measurement.Measure("FasterContainsDuplicate", () => { FasterContainsDuplicate(nums); });
-        measurement.Measure("FancyContainsDuplicate", () => { FancyContainsDuplicate(nums); });
+        measurement.Measure("ContainsDuplicate_I", () => { ContainsDuplicate_I(nums); });
+        measurement.Measure("ContainsDuplicate_II", () => { ContainsDuplicate_II(nums); });
+        measurement.Measure("ContainsDuplicate_III", () => { ContainsDuplicate_III(nums); });
     }
 }
