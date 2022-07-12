@@ -98,6 +98,17 @@ public class LC242_ValidAnagram
         return isAnagram;
     }
 
+    private static bool IsAnagram_IV(string s, string t)
+    {
+        if (s == null || t == null ||
+            s.Length != t.Length)
+            return false;
+
+        var sOrdered = new string(s.OrderBy(x => x).ToArray());
+        var tOrdered = new string(t.OrderBy(x => x).ToArray());
+        return sOrdered == tOrdered;
+    }
+
     public void DoMeasurement()
     {
         var word1 = "the morse code";
@@ -105,7 +116,8 @@ public class LC242_ValidAnagram
 
         var measurement = new Measurement();
         measurement.Measure("IsAnagram I", () => { IsAnagram_I(word1, word2); });
-        measurement.Measure("IsAnagram II", (Action)(() => { IsAnagram_II(word1, word2); }));
-        measurement.Measure("IsAnagram III", (Action)(() => { IsAnagram_III(word1, word2); }));
+        measurement.Measure("IsAnagram II", () => { IsAnagram_II(word1, word2); });
+        measurement.Measure("IsAnagram III", () => { IsAnagram_III(word1, word2); });
+        measurement.Measure("IsAnagram IV", () => { IsAnagram_IV(word1, word2); });
     }
 }
