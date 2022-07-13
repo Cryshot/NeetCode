@@ -3,7 +3,7 @@
 namespace NeetCode.Tests.ArraysAndHashing;
 
 [TestClass]
-public class LC1_TwoSumTests
+public class LC001_TwoSumTests
 {
     [TestMethod]
     public void TwoSum_Test1()
@@ -61,7 +61,7 @@ public class LC1_TwoSumTests
     }
     private int[] TwoSum(int[] nums, int target)
     {
-        var @object = new LC1_TwoSum();
+        var @object = new LC001_TwoSum();
         var result = @object
             .TwoSum(nums, target)
             .OrderBy(x => x)

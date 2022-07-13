@@ -1,6 +1,6 @@
 ﻿namespace NeetCode.Solutions.ArraysAndHashing;
 
-public class LC49_GroupAnagrams
+public class LC049_GroupAnagrams
 {
     public IList<IList<string>> GroupAnagrams(string[] strs)
     {

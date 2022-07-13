@@ -3,7 +3,7 @@
 namespace NeetCode.Tests.ArraysAndHashing;
 
 [TestClass]
-public class LC49_GroupAnagramsTests
+public class LC049_GroupAnagramsTests
 {
     [TestMethod]
     public void MultipleValidGroupAnagrams()
@@ -78,7 +78,7 @@ public class LC49_GroupAnagramsTests
 
     private IList<IList<string>> GroupAnagrams(string[] strs)
     {
-        var @object = new LC49_GroupAnagrams();
+        var @object = new LC049_GroupAnagrams();
         var result = @object.GroupAnagrams(strs);
         return result;
     }

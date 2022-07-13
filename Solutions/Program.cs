@@ -1,5 +1,5 @@
 ﻿using NeetCode.Solutions.ArraysAndHashing;
 
-var x = new LC49_GroupAnagrams();
+var x = new LC049_GroupAnagrams();
 
 x.DoMeasurement();

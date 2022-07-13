@@ -1,6 +1,6 @@
 ﻿namespace NeetCode.Solutions.ArraysAndHashing;
 
-public class LC1_TwoSum
+public class LC001_TwoSum
 {
     public int[] TwoSum(int[] nums, int target)
     {
