@@ -8,8 +8,4 @@
     <RootNamespace>NeetCode.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="TwoPointers\" />
-  </ItemGroup>
-
 </Project>
