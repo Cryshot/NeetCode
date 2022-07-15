@@ -21,4 +21,8 @@
     <ProjectReference Include="..\Solutions\Solutions.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="TwoPointers\" />
+  </ItemGroup>
+
 </Project>
