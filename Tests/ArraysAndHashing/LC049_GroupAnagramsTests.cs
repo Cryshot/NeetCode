@@ -73,7 +73,7 @@ public class LC049_GroupAnagramsTests
     }
     private void Assert(IList<IList<string>> expected, IList<IList<string>> actual)
     {
-        Utility.AssertCollectionOfCollections(expected.Cast<ICollection<string>>().ToList(), actual.Cast<ICollection<string>>().ToList());
+        Utility.AssertCollectionOfCollectionsEquivalent(expected.Cast<ICollection<string>>().ToList(), actual.Cast<ICollection<string>>().ToList());
     }
 
     private IList<IList<string>> GroupAnagrams(string[] strs)
